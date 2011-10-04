@@ -51,7 +51,7 @@ defaults write enable-spring-load-actions-on-all-items -bool true
 defaults write com.apple.dock show-process-indicators -bool true
 
 # Don’t animate opening applications from the Dock
-defaults write com.apple.dock launchanim -bool false
+#defaults write com.apple.dock launchanim -bool false
 
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
@@ -69,9 +69,9 @@ defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Disable disk image verification
-defaults write com.apple.frameworks.diskimages skip-verify -bool true
-defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
-defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+#defaults write com.apple.frameworks.diskimages skip-verify -bool true
+#defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+#defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 
 # Automatically open a new Finder window when a volume is mounted
 defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
@@ -99,15 +99,15 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 # Require password immediately after sleep or screen saver begins
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
+#defaults write com.apple.screensaver askForPassword -int 1
+#defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Enable tap to click (Trackpad)
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 
 # Map bottom right Trackpad corner to right-click
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
 
 # Disable Safari’s thumbnail cache for History and Top Sites
 defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
@@ -122,10 +122,10 @@ defaults write com.apple.Safari ProxiesInBookmarksBar "()"
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Disable the Ping sidebar in iTunes
-defaults write com.apple.iTunes disablePingSidebar -bool true
+#defaults write com.apple.iTunes disablePingSidebar -bool true
 
 # Disable all the other Ping stuff in iTunes
-defaults write com.apple.iTunes disablePing -bool true
+#defaults write com.apple.iTunes disablePing -bool true
 
 # Disable send and reply animations in Mail.app
 defaults write com.apple.Mail DisableReplyAnimations -bool true
@@ -135,7 +135,7 @@ defaults write com.apple.Mail DisableSendAnimations -bool true
 defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 
 # Enable Dashboard dev mode (allows keeping widgets on the desktop)
-defaults write com.apple.dashboard devmode -bool true
+#defaults write com.apple.dashboard devmode -bool true
 
 # Reset Launchpad
 [ -e ~/Library/Application\ Support/Dock/*.db ] && rm ~/Library/Application\ Support/Dock/*.db
