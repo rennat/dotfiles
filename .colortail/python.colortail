@@ -1,0 +1,23 @@
+# python stack trace
+
+COLOR magenta
+{
+^  File "(.*)",
+}
+
+COLOR green
+{
+^  File ".*", line ([0-9]*)
+}
+
+COLOR cyan
+{
+^  File ".*", line [0-9]*, in (.*)$
+}
+
+COLOR brightblack
+{
+^(Traceback .*)$
+^(  File ".*)$
+}
+
