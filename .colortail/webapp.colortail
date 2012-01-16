@@ -34,3 +34,26 @@ COLOR brightblue
 ([A-Za-z0-9]*DEBUG[A-Za-z0-9]*)
 }
 
+# python stack trace
+
+COLOR magenta
+{
+^  File "(.*)",
+}
+
+COLOR green
+{
+^  File ".*", line ([0-9]*)
+}
+
+COLOR cyan
+{
+^  File ".*", line [0-9]*, in (.*)$
+}
+
+COLOR brightblack
+{
+^(Traceback .*)$
+^(  File ".*)$
+}
+
